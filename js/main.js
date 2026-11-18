@@ -85,11 +85,7 @@ const galeriaTrilha = document.querySelector('.galeria-trilha');
 const botoesGaleria = Array.from(document.querySelectorAll('.galeria-abrir'));
 const lightbox = document.querySelector('.lightbox');
 
-const movimentoReduzido =
-  typeof window.matchMedia === 'function' &&
-  window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-if (galeriaTrilha && botoesGaleria.length && !movimentoReduzido) {
+if (galeriaTrilha && botoesGaleria.length) {
   botoesGaleria.forEach((botao) => {
     const item = botao.closest('.galeria-item');
     const clone = item.cloneNode(true);
@@ -191,3 +187,31 @@ if (lightbox && botoesGaleria.length) {
     }
   });
 }
+
+const simbolosBotoes = document.querySelectorAll('.simbolo-botao');
+
+simbolosBotoes.forEach((botao) => {
+  const detalhe = document.getElementById(botao.getAttribute('aria-controls'));
+
+  if (!detalhe) {
+    return;
+  }
+
+  botao.addEventListener('click', () => {
+    const aberto = botao.getAttribute('aria-expanded') === 'true';
+
+    simbolosBotoes.forEach((outroBotao) => {
+      const outroDetalhe = document.getElementById(outroBotao.getAttribute('aria-controls'));
+      outroBotao.setAttribute('aria-expanded', 'false');
+
+      if (outroDetalhe) {
+        outroDetalhe.hidden = true;
+      }
+    });
+
+    if (!aberto) {
+      botao.setAttribute('aria-expanded', 'true');
+      detalhe.hidden = false;
+    }
+  });
+});

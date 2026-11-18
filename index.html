@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./Projeto-Arraial-do-Pavulagem/css/style.css">
   <title>Arraial do Pavulagem</title>
 
   <meta name="description"
@@ -18,7 +17,7 @@
   <meta property="og:image" content="assets/img/Banner.jpg">
   <meta property="og:type" content="website">
 
-  <link rel="icon" href="assets/img/logo.png" type="image/png">
+  <link rel="icon" href="assets/img/Logo.jpg" type="image/jpeg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +35,7 @@
     <nav class="menu" aria-label="Navegação principal">
       <div class="marca">
         <div class="logo">
-          <img src="/Projeto-Arraial-do-Pavulagem/assets/img/Logo.jpg" alt="Boi do Arraial">
+          <img src="assets/img/Logo.jpg" alt="Boi do Arraial">
         </div>
         <h1 class="marca-nome">Arraial do Pavulagem</h1>
       </div>
@@ -51,7 +50,10 @@
       <div class="menu-links" id="menu-links">
         <a href="#home">Início</a>
         <a href="#historia">História</a>
+        <a href="#saberes">Saberes</a>
         <a href="#cortejo">O Cortejo</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#som-movimento">Movimento</a>
         <a href="#galeria">Galeria</a>
       </div>
     </nav>
@@ -63,19 +65,165 @@
       <img class="banner-img" src="./assets/img/Banner.jpg" alt="Cortejo do Arraial do Pavulagem em Belém">
       <div class="banner-conteudo">
         <h2 class="banner-titulo">Arraial do Pavulagem</h2>
-        <p class="banner-subtitulo">Cultura, música e tradição nas ruas de Belém do Pará.</p>
+        <p class="banner-subtitulo">A Energia da Cultura Amazônica nas Ruas de Belém</p>
         <a class="btn" href="#historia">Conheça a história</a>
       </div>
     </div>
 
     <section id="historia" class="secao historia revelar">
-      <div class="historia-conteudo">
-        <div class="historia-texto">
-          <h2>História do Arraial do Pavulagem</h2>
-          <!-- TODO: substituir pelo texto sobre a história do Arraial -->
-          <p>Espaço reservado para o texto sobre a história do Arraial do Pavulagem.</p>
+      <div class="historia-painel historia-nossa">
+        <div class="container historia-nossa-conteudo">
+          <div class="historia-nossa-cabecalho">
+            <span class="painel-titulo">Nossa História</span>
+            <div class="historia-titulo">
+              <span class="tag">Tradição desde 1987</span>
+              <h2>O Encanto e o Brilho do Pavulagem</h2>
+            </div>
+          </div>
+
+          <div class="historia-texto">
+            <p>Criado em Belém do Pará por Ronaldo Silva e Júnior Soares, o <strong>Arraial do Pavulagem</strong> nasceu do desejo de celebrar e manter vivos os ritmos da cultura popular amazônica. No vocabulário paraense, 'pavulagem' significa charme, brilho e o orgulho alegre de mostrar quem se é.</p>
+            <p>Hoje reconhecido como <strong>Patrimônio Cultural Imaterial</strong>, o movimento transforma as ruas do centro histórico em um grande palco a céu aberto, reunindo milhares de pessoas em cortejos gratuitos embalados por carimbó, retumbão, toada de boi e marujada.</p>
+          </div>
+
+          <figure class="historia-imagem">
+            <img class="historia-img" src="./assets/img/Historia.png"
+              alt="Brincantes e instrumentos do Arraial do Pavulagem durante um cortejo" loading="lazy">
+          </figure>
         </div>
-        <img class="historia-img" src="./assets/img/Historia.png" alt="História" loading="lazy">
+      </div>
+
+      <div class="historia-painel historia-memoria">
+        <h3 class="memoria-titulo">Linha do tempo</h3>
+        <div class="historia-linha-unica">
+          <span class="grupo-label grupo-marcos">Marcos da história</span>
+          <ol class="linha-do-tempo" aria-label="Linha do tempo do Arraial do Pavulagem">
+            <li class="linha-item">
+              <span class="linha-bola" aria-hidden="true"></span>
+              <span class="linha-ano">1987</span>
+              <h4>O começo em Belém</h4>
+              <p>Ronaldo Silva e Júnior Soares criam o Arraial para celebrar os ritmos da cultura popular amazônica.</p>
+            </li>
+            <li class="linha-item">
+              <span class="linha-bola" aria-hidden="true"></span>
+              <span class="linha-ano">Anos seguintes</span>
+              <h4>O cortejo ganha as ruas</h4>
+              <p>Músicos, pernaltas e dançarinos transformam o boi, o batuque e o chapéu de fitas em símbolos da festa.</p>
+            </li>
+            <li class="linha-item">
+              <span class="linha-bola" aria-hidden="true"></span>
+              <span class="linha-ano">Reconhecimento</span>
+              <h4>Patrimônio Cultural Imaterial</h4>
+              <p>A manifestação passa a ser reconhecida como parte essencial da memória cultural do Pará.</p>
+            </li>
+            <li class="linha-item">
+              <span class="linha-bola" aria-hidden="true"></span>
+              <span class="linha-ano">Hoje</span>
+              <h4>Um palco a céu aberto</h4>
+              <p>Milhares de pessoas se encontram nos cortejos gratuitos do centro histórico de Belém.</p>
+            </li>
+          </ol>
+
+          <span class="grupo-label grupo-simbolos">Personagens e símbolos</span>
+          <div class="historia-pilares">
+            <article class="historia-pilar">
+              <span class="pilar-bola" aria-hidden="true"></span>
+              <h3>Batalhão da Estrela</h3>
+              <p>Centenas de brincantes voluntários — entre músicos, pernaltas e dançarinos — que ensaiam meses antes para dar som e alma ao cortejo.</p>
+            </article>
+
+            <article class="historia-pilar">
+              <span class="pilar-bola" aria-hidden="true"></span>
+              <h3>O Boi Pavulagem</h3>
+              <p>Símbolo maior da festa, o boi-bumbá com a estrela na testa conduz a multidão e celebra a força do Bumba Meu Boi amazônico.</p>
+            </article>
+
+            <article class="historia-pilar">
+              <span class="pilar-bola" aria-hidden="true"></span>
+              <h3>Chapéu de Fitas</h3>
+              <p>O grande ícone visual da manifestação: chapéus de palha decorados com fitas coloridas que balançam no ritmo da percussão.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="saberes" class="secao saberes revelar">
+      <div class="saberes-cabecalho">
+        <div class="saberes-titulo">
+          <svg class="saberes-icone" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+            <path fill="#0017e2"
+              d="M32 3l6.4 14.3 15.6 1.7-11.7 10.4 3.3 15.3L32 37.1 18.4 44.7l3.3-15.3L10 19l15.6-1.7z">
+            </path>
+            <path fill="#fcec05" d="M20 44l-7 14 9-5 5 10 5-12-5-2z"></path>
+            <path fill="#fcec05" d="M44 44l7 14-9-5-5 10-5-12 5-2z"></path>
+            <circle cx="32" cy="24" r="4" fill="#fcec05"></circle>
+          </svg>
+          <h2>Saberes, personagens e símbolos</h2>
+        </div>
+        <p>Toque nos símbolos para descobrir um pouco do imaginário que acompanha os cortejos do Pavulagem.</p>
+      </div>
+
+      <div class="saberes-layout">
+        <div class="saberes-cards">
+          <article class="saberes-card">
+            <h3>Saberes compartilhados</h3>
+            <p>Nos ensaios, passam de boca em boca os ritmos, os passos, os versos e os gestos que dão forma ao cortejo.</p>
+          </article>
+
+          <article class="saberes-card simbolo-card">
+            <button class="simbolo-botao" type="button" aria-expanded="false" aria-controls="detalhe-estrela">
+              <svg viewBox="0 0 24 24" width="40" height="40" aria-hidden="true" focusable="false">
+                <path fill="currentColor"
+                  d="M12 2l2.9 6.2 6.8.9-5 4.7 1.3 6.7L12 17.3 6 20.5l1.3-6.7-5-4.7 6.8-.9z">
+                </path>
+              </svg>
+              <span>Batalhão da Estrela</span>
+            </button>
+            <div class="simbolo-detalhe" id="detalhe-estrela" hidden>
+              <p>A estrela guia o batalhão e faz brilhar a presença coletiva de músicos, pernaltas e dançarinos nas ruas.</p>
+            </div>
+          </article>
+
+          <article class="saberes-card simbolo-card">
+            <button class="simbolo-botao" type="button" aria-expanded="false" aria-controls="detalhe-boi">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <path d="M5 6L3 3l4 2M19 6l2-3-4 2"></path>
+                <path d="M6 8c0-2.8 2.7-5 6-5s6 2.2 6 5v4c0 4-2.7 7-6 7s-6-3-6-7z"></path>
+                <circle cx="9.5" cy="11" r="1"></circle>
+                <circle cx="14.5" cy="11" r="1"></circle>
+                <path d="M10 15c1.2 1 2.8 1 4 0"></path>
+                <path d="M12 3l.8 1.7 1.9.2-1.4 1.3.4 1.8-1.7-1-1.7 1 .4-1.8-1.4-1.3 1.9-.2z"></path>
+              </svg>
+              <span>Boi Pavulagem</span>
+            </button>
+            <div class="simbolo-detalhe" id="detalhe-boi" hidden>
+              <p>Com a estrela na testa, o boi-bumbá conduz a multidão e celebra a força do Bumba Meu Boi amazônico.</p>
+            </div>
+          </article>
+
+          <article class="saberes-card simbolo-card">
+            <button class="simbolo-botao" type="button" aria-expanded="false" aria-controls="detalhe-chapeu">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <path d="M3 15c2-2 5.4-3 9-3s7 1 9 3c-2 2-5.4 3-9 3s-7-1-9-3z"></path>
+                <path d="M7 14c0-3.3 2.2-6 5-6s5 2.7 5 6"></path>
+                <path d="M9 12l-3-3M15 12l3-3"></path>
+              </svg>
+              <span>Chapéu de fitas</span>
+            </button>
+            <div class="simbolo-detalhe" id="detalhe-chapeu" hidden>
+              <p>As fitas coloridas balançam com a percussão e transformam o chapéu de palha em ícone visual da festa.</p>
+            </div>
+          </article>
+        </div>
+
+        <figure class="saberes-imagem">
+          <img src="./assets/img/Registro.webp" alt="Brincantes e ritmistas do Arraial do Pavulagem em cortejo"
+            loading="lazy">
+          <figcaption>O cortejo como memória viva do Pavulagem.</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -107,9 +255,8 @@
               <line x1="3" y1="10" x2="21" y2="10" />
             </svg>
           </span>
-          <h3>Datas e percurso</h3>
-          <!-- TODO: substituir pelas datas e percurso do cortejo -->
-          <p>Espaço reservado para as datas e o percurso do cortejo.</p>
+          <h3>Como o cortejo acontece</h3>
+          <p>Brincantes, músicos e dançarinos ocupam as ruas do centro histórico em um cortejo gratuito e aberto a quem quiser acompanhar.</p>
         </article>
 
         <article class="cortejo-card">
@@ -122,8 +269,7 @@
             </svg>
           </span>
           <h3>Música e ritmos</h3>
-          <!-- TODO: substituir pelos ritmos e músicas do cortejo -->
-          <p>Espaço reservado para os ritmos e a música do cortejo.</p>
+          <p>Carimbó, retumbão, toada de boi e marujada embalam o desfile, conduzidos pela percussão e pelo canto coletivo.</p>
         </article>
 
         <article class="cortejo-card">
@@ -137,9 +283,113 @@
             </svg>
           </span>
           <h3>Como participar</h3>
-          <!-- TODO: substituir pelas orientações de participação -->
-          <p>Espaço reservado para as orientações de participação.</p>
+          <p>Você pode ir com a família, o namorado ou a namorada e os amigos, acompanhar o cortejo em pontos próximos ao percurso, usar roupas leves e ficar atento à segurança das ruas.</p>
+          <p>Se quiser participar dos ensaios, dançar ou aprender a coreografia para se preparar, acompanhe as redes sociais do Arraial do Pavulagem. Por lá você fica sabendo das datas e orientações e pode tirar suas dúvidas.</p>
         </article>
+      </div>
+    </section>
+
+    <section id="agenda" class="secao agenda revelar">
+      <div class="agenda-cabecalho">
+        <h2>Agenda do Arraial</h2>
+        <p>Roteiro ilustrativo das etapas do dia; as datas e horários oficiais podem ser atualizados aqui.</p>
+      </div>
+
+      <div class="agenda-grid">
+        <div class="agenda-lista">
+          <h3>Programação do dia</h3>
+          <ol class="agenda-etapas">
+            <li>
+              <span class="agenda-etapa-numero">01</span>
+              <div>
+                <h4>Concentração</h4>
+                <p>Brincantes, músicos e o boi se reúnem no ponto de encontro.</p>
+              </div>
+            </li>
+            <li>
+              <span class="agenda-etapa-numero">02</span>
+              <div>
+                <h4>Saída do cortejo</h4>
+                <p>A banda inicia a caminhada e o cortejo ganha as ruas.</p>
+              </div>
+            </li>
+            <li>
+              <span class="agenda-etapa-numero">03</span>
+              <div>
+                <h4>Pontos de passagem</h4>
+                <p>O grupo percorre as ruas e encontra o público ao longo do trajeto.</p>
+              </div>
+            </li>
+            <li>
+              <span class="agenda-etapa-numero">04</span>
+              <div>
+                <h4>Chegada</h4>
+                <p>O cortejo se reencontra no ponto final para o encerramento.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="agenda-mapa">
+          <h3>Percurso do cortejo</h3>
+          <svg class="mapa-svg" viewBox="0 0 620 320" role="img" aria-labelledby="mapa-titulo mapa-descricao">
+            <title id="mapa-titulo">Mapa esquemático do percurso do cortejo</title>
+            <desc id="mapa-descricao">Roteiro ilustrativo com concentração, pontos de passagem e chegada.</desc>
+            <rect x="10" y="10" width="600" height="300" rx="18" fill="#e9edff"></rect>
+            <path d="M90 250 C160 230 170 130 260 150 S380 240 450 180 S520 70 550 70" fill="none"
+              stroke="#0017e2" stroke-width="10" stroke-linecap="round" stroke-dasharray="1 22"></path>
+            <circle cx="90" cy="250" r="16" fill="#fcec05" stroke="#0017e2" stroke-width="6"></circle>
+            <circle cx="260" cy="150" r="14" fill="#fcec05" stroke="#0017e2" stroke-width="6"></circle>
+            <circle cx="450" cy="180" r="14" fill="#fcec05" stroke="#0017e2" stroke-width="6"></circle>
+            <circle cx="550" cy="70" r="16" fill="#0017e2" stroke="#fcec05" stroke-width="6"></circle>
+            <text x="90" y="292" text-anchor="middle" fill="#0017e2" font-size="18" font-weight="700">Concentração</text>
+            <text x="260" y="124" text-anchor="middle" fill="#0017e2" font-size="17" font-weight="700">Passagem 1</text>
+            <text x="450" y="216" text-anchor="middle" fill="#0017e2" font-size="17" font-weight="700">Passagem 2</text>
+            <text x="550" y="42" text-anchor="middle" fill="#0017e2" font-size="18" font-weight="700">Chegada</text>
+          </svg>
+          <ul class="mapa-legenda">
+            <li>Concentração</li>
+            <li>Pontos de passagem</li>
+            <li>Chegada</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="som-movimento" class="secao som-movimento revelar">
+      <h2>Movimento</h2>
+
+      <div class="album-destaque">
+        <figure class="album-capa">
+          <img src="./assets/img/Ceu-da-Camboinha.jpg"
+            alt="Capa do álbum Céu da Camboinha, da banda Arraial do Pavulagem" loading="lazy">
+        </figure>
+
+        <div class="album-info">
+          <span class="album-tag">Álbum em destaque</span>
+          <h3>Céu da Camboinha</h3>
+          <p class="album-meta">Banda Arraial do Pavulagem · 2013</p>
+          <p>Vocais: <strong>Ronaldo Silva</strong> e <strong>Júnior Soares</strong>.</p>
+          <p>Integrantes da gravação:</p>
+          <ul class="album-integrantes">
+            <li><strong>Júnior Soares</strong> — voz e violão</li>
+            <li><strong>Ronaldo Silva</strong> — voz</li>
+            <li><strong>Rubens Stanislau</strong> — baixo</li>
+            <li><strong>Marcelo Fernandes</strong> — guitarra</li>
+            <li><strong>Rafael Barros</strong>, <strong>Edgar Chagas</strong> e <strong>Franklin Furtado</strong> —
+              percussão</li>
+          </ul>
+
+          <a class="spotify-btn" href="https://open.spotify.com/album/2UAgLbX859o8z8FlWHLJhn" target="_blank"
+            rel="noopener noreferrer" aria-label="Ouvir Céu da Camboinha no Spotify em nova aba">
+            <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+              <path fill="currentColor"
+                d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm4.55 14.43a.78.78 0 0 1-1.08.26c-2.96-1.81-6.69-2.22-11.08-1.22a.78.78 0 1 1-.35-1.52c4.78-1.11 8.88-.64 12.19 1.4.37.22.49.7.32 1.08zm1.21-2.7a.98.98 0 0 1-1.35.32c-3.39-2.08-8.55-2.69-12.56-1.47a.98.98 0 1 1-.57-1.87c4.58-1.39 10.27-.71 14.16 1.64.46.29.6.89.32 1.38zm.1-2.81C14.16 8.63 7.9 8.43 4.34 9.5a1.17 1.17 0 1 1-.68-2.24c4.1-1.24 11.04-1.01 15.4 1.52a1.17 1.17 0 0 1-1.2 2.14z">
+              </path>
+            </svg>
+            <span>Ouvir o álbum no Spotify</span>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -159,29 +409,46 @@
       </div>
 
       <h2>Galeria de Registros</h2>
+      <p class="galeria-dica">Toque ou clique nas fotos para ampliar.</p>
 
       <div class="galeria-carrossel">
         <div class="galeria-trilha">
           <figure class="galeria-item">
-            <button class="galeria-abrir" type="button" data-src="assets/img/173013695_d37c8a5d16_b.jpg"
+            <button class="galeria-abrir" type="button" data-src="assets/img/Registro.webp"
               data-legenda="Cortejo do Arraial" aria-label="Ampliar imagem: Cortejo do Arraial">
-              <img src="./assets/img/Registro.webp" alt="" loading="lazy">
+              <img src="./assets/img/Registro.webp" alt="Cortejo do Arraial" loading="lazy">
             </button>
             <figcaption>Cortejo do Arraial</figcaption>
           </figure>
           <figure class="galeria-item">
-            <button class="galeria-abrir" type="button" data-src="assets/img/7fc07c5f-b013-489b-b5bc-7c26be4a623d.webp"
+            <button class="galeria-abrir" type="button" data-src="assets/img/Registro.jpg"
               data-legenda="Festa do Arraial" aria-label="Ampliar imagem: Festa do Arraial">
-              <img src="./assets/img/Registro.jpg" alt="" loading="lazy">
+              <img src="./assets/img/Registro.jpg" alt="Festa do Arraial" loading="lazy">
             </button>
             <figcaption>Festa do Arraial</figcaption>
           </figure>
           <figure class="galeria-item">
-            <button class="galeria-abrir" type="button" data-src="assets/img/Banner.jpg" data-legenda="Boi do Arraial"
-              aria-label="Ampliar imagem: Boi do Arraial">
-              <img src="./assets/img/Registro.png" alt="" loading="lazy">
+            <button class="galeria-abrir" type="button" data-src="assets/img/Registro.png"
+              data-legenda="Boi do Arraial" aria-label="Ampliar imagem: Boi do Arraial">
+              <img src="./assets/img/Registro.png" alt="Boi do Arraial" loading="lazy">
             </button>
             <figcaption>Boi do Arraial</figcaption>
+          </figure>
+          <figure class="galeria-item">
+            <button class="galeria-abrir" type="button" data-src="assets/img/Banner.jpg"
+              data-legenda="Cortejo nas ruas de Belém" aria-label="Ampliar imagem: Cortejo nas ruas de Belém">
+              <img src="./assets/img/Banner.jpg" alt="Cortejo nas ruas de Belém" loading="lazy">
+            </button>
+            <figcaption>Cortejo nas ruas de Belém</figcaption>
+          </figure>
+          <figure class="galeria-item">
+            <button class="galeria-abrir" type="button"
+              data-src="assets/img/ARRAIAL-DO-PAVULAGEM-1_00806997_1_.jpg" data-legenda="Brincantes do Pavulagem"
+              aria-label="Ampliar imagem: Brincantes do Pavulagem">
+              <img src="./assets/img/ARRAIAL-DO-PAVULAGEM-1_00806997_1_.jpg" alt="Brincantes do Pavulagem"
+                loading="lazy">
+            </button>
+            <figcaption>Brincantes do Pavulagem</figcaption>
           </figure>
         </div>
       </div>
@@ -202,9 +469,32 @@
     <div class="rodape-conteudo">
       <p>Arraial do Pavulagem. Direitos Reservados.</p>
       <nav class="rodape-redes" aria-label="Redes sociais">
-        <a href="#" aria-label="Instagram">Instagram</a>
-        <a href="#" aria-label="YouTube">YouTube</a>
-        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="https://www.instagram.com/arraialdopavulagem/" target="_blank" rel="noopener noreferrer"
+          aria-label="Instagram do Arraial do Pavulagem (abre em nova aba)">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+        <a href="https://www.youtube.com/@ArraialdoPavulagemOficial" target="_blank" rel="noopener noreferrer"
+          aria-label="YouTube do Arraial do Pavulagem (abre em nova aba)">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path
+              d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z">
+            </path>
+            <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"></polygon>
+          </svg>
+        </a>
+        <a href="https://www.facebook.com/arraialdopavulagemoficial" target="_blank" rel="noopener noreferrer"
+          aria-label="Facebook do Arraial do Pavulagem (abre em nova aba)">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+          </svg>
+        </a>
       </nav>
     </div>
   </footer>
